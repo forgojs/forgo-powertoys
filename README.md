@@ -2,7 +2,7 @@
 
 A set of utility functions for use in Forgo Apps.
 
-## renderElement()
+## The rerenderElement function
 
 Renders a component mounted on an element.
 
@@ -13,12 +13,10 @@ function LiveScores() {
   return {
     render(props) {
       return <p id="live-scores">Top score is {props.topscore}</p>;
-    }
-  }
+    },
+  };
 }
 
-rerenderElement(
-  "#live-scores", 
-  { topscore: 244 }
-);
+rerenderElement("#live-scores", { topscore: 244 });
+rerenderElement("#live-scores", { topscore: 255 });
 ```
