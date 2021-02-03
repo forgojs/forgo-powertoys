@@ -9,6 +9,7 @@ Renders a component mounted on an element.
 ```tsx
 import { rerenderElement } from "forgo-powertoys";
 
+// A forgo component.
 function LiveScores() {
   return {
     render(props) {
@@ -17,6 +18,9 @@ function LiveScores() {
   };
 }
 
+// Call rerender on the element.
 rerenderElement("#live-scores", { topscore: 244 });
+
+// As needed, any time.
 rerenderElement("#live-scores", { topscore: 255 });
 ```
