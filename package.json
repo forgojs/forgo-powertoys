@@ -1,0 +1,17 @@
+{
+  "name": "forgo-powertoys",
+  "version": "0.0.1",
+  "author": "Jeswin Kumar<jeswinpk@agilehead.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/forgojs/forgo-powertoys"
+  },
+  "main": "./dist",
+  "dependencies": {
+    "forgo": "^0.0.43"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "license": "MIT"
+}
