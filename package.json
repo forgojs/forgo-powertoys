@@ -1,12 +1,13 @@
 {
   "name": "forgo-powertoys",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "author": "Jeswin Kumar<jeswinpk@agilehead.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/forgojs/forgo-powertoys"
   },
   "main": "./dist",
+  "types": "./dist/index.d.ts",
   "dependencies": {
     "forgo": "^0.0.61"
   },
