@@ -1,18 +1,24 @@
 {
   "name": "forgo-powertoys",
   "version": "1.0.19",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./src/index.ts",
   "author": "Jeswin Kumar<jeswinpk@agilehead.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/forgojs/forgo-powertoys"
   },
-  "main": "./dist",
-  "types": "./dist/index.d.ts",
   "dependencies": {
-    "forgo": "^1.4.7"
+    "forgo": "^1.4.12"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.3.5"
   },
   "scripts": {
-    "build": "tsc"
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && mkdir -p dist && npx tsc"
   },
   "license": "MIT"
 }
