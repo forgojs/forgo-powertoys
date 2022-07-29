@@ -10,7 +10,7 @@
     "url": "https://github.com/forgojs/forgo-powertoys"
   },
   "peerDependencies": {
-    "forgo": "^3.1.0"
+    "forgo": "^3.2.0-beta.0"
   },
   "devDependencies": {
     "rimraf": "^3.0.2",
