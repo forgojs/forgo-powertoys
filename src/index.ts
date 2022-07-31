@@ -47,19 +47,22 @@ export function rerenderElement(
   elementSelector: Element | string | null,
   props?: any
 ): RenderResult {
-  let element = (isString(elementSelector)
-    ? env.document.querySelector(elementSelector)
-    : elementSelector) as Element;
+  let element = (
+    isString(elementSelector)
+      ? env.document.querySelector(elementSelector)
+      : elementSelector
+  ) as Element;
 
   if (element) {
     if (element.nodeType === ELEMENT_NODE_TYPE) {
       const state = getForgoState(element);
-      if (state && state.components.length) {
-        return rerender(state.components[0].args.element, props);
-      } else {
-        throw new Error(
-          "Could not find an attached component to rerender."
+      if (state?.components.length) {
+        return rerender(
+          state.components[0].component.__internal.element,
+          props
         );
+      } else {
+        throw new Error("Could not find an attached component to rerender.");
       }
     } else {
       throw new Error(
