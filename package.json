@@ -1,6 +1,6 @@
 {
   "name": "forgo-powertoys",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -10,11 +10,11 @@
     "url": "https://github.com/forgojs/forgo-powertoys"
   },
   "peerDependencies": {
-    "forgo": "^3.2.0-beta.0"
+    "forgo": "^4.0.3"
   },
   "devDependencies": {
-    "rimraf": "^3.0.2",
-    "typescript": "^4.6.3"
+    "rimraf": "^4.1.2",
+    "typescript": "^4.9.5"
   },
   "scripts": {
     "clean": "rimraf ./dist",
